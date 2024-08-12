@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Reservation System</title>
+    <style>
+        table {
+            width: 80%;
+            text-align: center;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th,
+        tr,
+        td {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <form action="" id="form">
+        <label for="tableid">Table ID</label>
+        <input type="text" placeholder="A1" name="tableid" id="tableid">
+
+        <label for="min_cap">Minimum Capacity</label>
+        <input type="number" placeholder="4" name="min_cap" id="min_cap">
+
+        <label for="max_cap">Maximum Capacity</label>
+        <input type="number" placeholder="2" name="max_cap" id="max_cap"><br>
+        <input type="reset" value="reset">
+    </form>
+    
+    <input type="submit" onclick="submit() " value="Save">
+
+    <div id="msg"></div>
+
+    <table id="table" style="margin-top: 40px;">
+
+        <tr>
+            <th>Table ID</th>
+            <th>Minimum Capacity</th>
+            <th>Maximum Capacity</th>
+            <th>Action</th>
+        </tr>
+
+
+    </table>
+
+    <script src="pro.js"></script>
+</body>
+
+</html>
